@@ -13,7 +13,7 @@
     <name>Reinforcement Learning4j Examples</name>
 
     <properties>
-        <rl4j.version>0.7.0</rl4j.version>
+        <rl4j.version>0.9.0</rl4j.version>
     </properties>
 
     <repositories>
@@ -130,14 +130,11 @@
                         </goals>
                         <configuration>
                             <transformers>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
                                     <resource>reference.conf</resource>
                                 </transformer>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
-                                <transformer
-                                        implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
+                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                 </transformer>
                             </transformers>
                         </configuration>
